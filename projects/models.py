@@ -21,6 +21,7 @@ class UserTest(models.Model):
   desc = models.TextField()
   url = models.URLField()
   test_type = models.CharField(max_length=1, choices=USER_TEST_TYPES)
+  is_private = models.BooleanField(default=False)
   
   def __unicode__(self):
     return self.name
