@@ -1,2 +1,6 @@
-settings.py
-.pyc
+local_settings.py
+.DS_Store
+*.pyc
+*.bak
+*.db
+*~
