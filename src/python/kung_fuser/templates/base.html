@@ -28,14 +28,16 @@
 <body>
   <header>
     {% block header_content %}
-      {% include "global/header.html" %}
+      {% include "header.html" %}
     {% endblock %}
   </header>
   <div role="main">
     {% block body_content %}{% endblock %}
   </div>
   <footer>
-    {% block footer_content %}{% endblock %}
+    {% block footer_content %}
+      {% include "footer.html" %}
+    {% endblock %}
   </footer>
 
 

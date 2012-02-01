@@ -1,4 +1,4 @@
-from projects.models import Project, UserTest, Task
+from kung_fuser.projects.models import Project, UserTest, Task
 from django.contrib import admin
 
 class UserTestAdmin(admin.TabularInline):
