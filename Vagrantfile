@@ -28,24 +28,22 @@ Vagrant::Config.run do |config|
 
     # chef.recipe_url = "http://cloud.github.com/downloads/d0ugal/chef_recipes/cookbooks.tar.gz"
     chef.cookbooks_path = "cookbooks"
-
+    
+    #DB settings
+    chef.json.merge!({
+      :postgresql => {
+        :password =>  { :postgres => "asdf" }
+      }
+    })
+    
     # chef.add_recipe "main"
     chef.add_recipe "git"
     chef.add_recipe "apache2"
     chef.add_recipe "python"
     chef.add_recipe "openssl"
     chef.add_recipe "postgresql::server"
-
-    chef.json.merge!({
-      :project_name => "kung_fuser",
-
-      :system_packages => [],
-      :python_global_packages => [],
-      :python_packages => [],
-    })
-
+    chef.add_recipe "database"
   end
-
   
 
   # Enable provisioning with Puppet stand alone.  Puppet manifests
