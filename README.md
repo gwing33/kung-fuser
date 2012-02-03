@@ -2,22 +2,26 @@
 
 ## Initial Setup
 
-- Clone the Repo into your directory then in a terminal cd into the location
+Install VirtualBox and Vagrant:
+- https://www.virtualbox.org/
+- http://vagrantup.com/
 
-<code>cd /your/location/to/kung_fuser/</code>
+Clone the repo and cd into it.
 
-- Copy local_settings.py.template
+<code>cd /path/to/cloned repo</code>
 
-<code>cp local_settings.py.template local_settings.py</code>
- 
-- Configure local_settings.py to your local DB settings
-- Run the syncdb command (Will probably be asked to create a super user...)
+Build your VM server...
 
-<code>python manage.py syncdb</code>
+<code>vagrant up</code>
 
-- Start Server
+SSH into it...
 
-<code>python manage.py runserver</code>
+<code>vagrant ssh</code>
 
-- Should be started at http://127.0.0.1:8000/
-- To see the admin section just append 'admin' on to that
+Go into the python folder...
+
+<code>cd /vagrant/src/python/</code>
+
+Run the server on port 8000
+
+<code>python manage.py runserver 0.0.0.0:8000</code>
