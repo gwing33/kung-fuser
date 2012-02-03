@@ -3,6 +3,7 @@
 ## Initial Setup
 
 Install VirtualBox and Vagrant:
+
 - https://www.virtualbox.org/
 - http://vagrantup.com/
 
