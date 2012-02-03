@@ -67,7 +67,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-  '/projects/git_forks/kung_fuser/src/assets/',
+  '/vagrant/src/assets/',
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -107,7 +107,7 @@ ROOT_URLCONF = 'kung_fuser.urls'
 WSGI_APPLICATION = 'kung_fuser.wsgi.application'
 
 TEMPLATE_DIRS = (
-  "/projects/git_forks/kung_fuser/src/python/kung_fuser/templates" # Don't forget to use absolute paths, not relative paths.
+  "/vagrant/src/python/kung_fuser/templates" # Don't forget to use absolute paths, not relative paths.
 )
 
 INSTALLED_APPS = (
