@@ -26,3 +26,5 @@ Go into the python folder...
 Run the server on port 8000
 
 <code>python manage.py runserver 0.0.0.0:8000</code>
+
+In a browser you'll be able to access the site at http://33.33.0.10:8000/
