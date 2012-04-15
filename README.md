@@ -47,8 +47,9 @@ Run the server on port 8000
 
 In a browser you'll be able to access the site at http://33.33.0.10:8000/
 
-
 ## Working with styles
+
+Don't modify the css files, instead from this location, run compass and modify the files in the src/assets/sass/ folder...
 
 <code>cd /path/to/cloned_repo</code>
 
