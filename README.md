@@ -1,6 +1,22 @@
 # Kung Fuser
 
-## Initial Setup
+## Initial Setup with RVM
+
+- Install RVM (http://beginrescueend.com/)
+- Install VirtualBox (https://www.virtualbox.org/)
+
+Clone the repo and cd into it.
+
+<code>cd /path/to/cloned_repo</code>
+
+It should prompt you to use rvmrc file, say "yes", then bundle install
+
+<code>bundle install</code>
+
+Build VM Server (see below)
+
+
+## Initial Setup without RVM
 
 Install VirtualBox and Vagrant:
 
@@ -11,8 +27,10 @@ Clone the repo and cd into it.
 
 <code>cd /path/to/cloned repo</code>
 
-Build your VM server...
+Build VM Server (see below)
 
+
+## Build your VM Server and Run the project
 <code>vagrant up</code>
 
 SSH into it...

@@ -1,0 +1,5 @@
+source "http://rubygems.org"
+gem "sass"
+gem "compass"
+gem "compass-susy-plugin"
+gem "vagrant"
